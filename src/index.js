@@ -6,8 +6,9 @@ import './index.css';
 import Contacts from './Views/Contacts';
 import Home from './Views/Home';
 import NotFound from './Views/NotFound';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import Services from './Views/Services';
+import News from './Views/News'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,8 @@ root.render(
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/contacts' element={<Contacts/>} />
+      <Route path='/news' element={<News/>} />
+      <Route path='/services' element={<Services/>} />
       <Route path='*' element={<NotFound/>} />
     </Routes>
     </BrowserRouter>

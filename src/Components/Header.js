@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../assets/images/Logo.svg'
 import {NavLink, Link} from 'react-router-dom'
+import Button from '../assets/Generics/Button'
 
 const Header = () => {
   return (
@@ -51,7 +52,7 @@ const Header = () => {
                         <NavLink to="/contacts">Contacts</NavLink>
                         
                     </nav>
-                    <a className="btn-yellow login" href="login.html">Login <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <Button type="yellow" title="Login" url="/login"/>
                 </div>
             </div>
         </div>

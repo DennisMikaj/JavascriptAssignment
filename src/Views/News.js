@@ -1,21 +1,17 @@
 import React from 'react'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
-import FirstShowcase from '../Components/FirstShowcase'
-import Brands from '../Components/Brands'
 
-const Home = () => {
+const News = () => {
   return (
     <div className="wrapper">
-    
         <Header />
         <main>
-        <FirstShowcase />
-        <Brands />
+            <h1>News Section</h1>
         </main>
         <Footer />
-        </div>
+    </div>
   )
 }
 
-export default Home
+export default News
