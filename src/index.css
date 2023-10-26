@@ -7,7 +7,11 @@ html, body {
   font-weight: 400;
 }
 
-
+.btn-yellow {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -463,12 +467,15 @@ header .menu .main-menu .btn-yellow {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-evenly;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   margin-left: 30px;
 }
 @media (min-width: 1200px) {
   .container .right-column-1 {
+    display: flex;
     flex-direction: row;
+    flex:2;
+    padding-top: 40px;
   }
 }
 .container .right-column-1 .icon-group {
@@ -476,19 +483,22 @@ header .menu .main-menu .btn-yellow {
 }
 @media (min-width: 1200px) {
   .container .right-column-1 .icon-group {
-    flex-basis: calc(50% - 10px);
-    flex-wrap: wrap;
+    /* flex-basis: calc(50% - 10px); */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
     font-size: 40px;
     margin-bottom: 40px;
     text-align: start;
   }
 }
 .container .right-column-1 .icon-group h4, .container .right-column-1 .icon-group p {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .container .right-column-1 .icon-group h4 {
   font-size: 22px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: 700;
 }
 .container .right-column-1 .icon-group p {
@@ -649,6 +659,7 @@ header .menu .main-menu .btn-yellow {
 @media (min-width: 998px) {
   .services .services-boxes {
     flex-direction: row;
+    
   }
 }
 .services .services-boxes a {
