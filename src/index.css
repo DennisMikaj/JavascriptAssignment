@@ -7,6 +7,15 @@ html, body {
   font-weight: 400;
 }
 
+.articles img {
+  margin-top: 30px;
+  max-width: 100%;
+  width: 60%;
+  height: 30dvh;
+  
+}
+
+
 .btn-yellow {
   text-align: center;
   justify-content: center;
@@ -986,6 +995,8 @@ header .menu .main-menu .btn-yellow {
   font-size: 14px;
   font-family: "Inter", sans-serif;
   color: black;
+  margin-right: 20px;
+  margin-top: 25px;
 }
 @media (min-width: 1200px) {
   .testimonial .testimonial-text {
@@ -995,14 +1006,14 @@ header .menu .main-menu .btn-yellow {
 }
 .testimonial .flex-column {
   flex-direction: row;
-  align-items: start;
+  align-items: flex-start;
   text-align: start;
   justify-content: flex-start;
   padding-left: 40px;
   padding-right: 40px;
+
 }
 .testimonial .flex-column img {
-  padding-bottom: 20px;
   padding-top: 90px;
 }
 @media (max-width: 1200px) {
@@ -1049,6 +1060,7 @@ header .menu .main-menu .btn-yellow {
 .articles {
   display: flex;
   flex-direction: column;
+  
 }
 @media (max-width: 1400px) {
   .articles {
@@ -1062,6 +1074,10 @@ header .menu .main-menu .btn-yellow {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.articles .flex-row a {
+  align-self: center;
 }
 .articles p {
   color: #F94D1C;
@@ -1086,12 +1102,19 @@ header .menu .main-menu .btn-yellow {
   }
 }
 
+.error {
+  color: #191919;
+  background-color: rgba(199, 98, 98, 0.788);
+}
+
 .articles-images {
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
   padding-left: 0px;
   margin-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
 }
 @media (max-width: 990px) {
   .articles-images {
@@ -1201,6 +1224,19 @@ header .menu .main-menu .btn-yellow {
   width: 220px;
   text-align: center;
   margin-right: 15px;
+  border-radius: 25px;
+
+}
+
+#email-error {
+  color: rgb(196, 80, 80);
+  position: absolute;
+  top: 160px;
+  right: 450px;
+}
+.signup input:focus {
+  border: 1px solid #191919;
+  outline: none;
 }
 .signup img {
   position: absolute;

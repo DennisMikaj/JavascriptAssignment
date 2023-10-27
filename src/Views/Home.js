@@ -9,6 +9,8 @@ import OurServices from '../Components/OurServices'
 import WhyChooseUs from '../Components/WhyChooseUs'
 import GlobalProjects from '../Components/GlobalProjects'
 import MeetTheTeam from '../Components/MeetTheTeam'
+import NewsAndArticles from '../Components/NewsAndArticles'
+import SignupForm from '../Components/SignupForm'
 
 const Home = () => {
   return (
@@ -24,6 +26,8 @@ const Home = () => {
         <WhyChooseUs />
         <GlobalProjects />
         <MeetTheTeam />
+        <NewsAndArticles />
+        <SignupForm />
         </main>
         <Footer />
         </div>

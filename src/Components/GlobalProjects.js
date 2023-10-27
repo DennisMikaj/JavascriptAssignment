@@ -17,9 +17,6 @@ const GlobalProjects = () => {
 
     
 
-
-
-
     <div className="project-and-cases">
 
     <GlobalProjectList url="/Services" img={ManReading} alt="Man reading a newspaper" title="Grow Your Business" text="Read More" icon={<i className="fa-solid fa-arrow-up-right-from-square"></i>}/>
