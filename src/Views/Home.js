@@ -11,6 +11,7 @@ import GlobalProjects from '../Components/GlobalProjects'
 import MeetTheTeam from '../Components/MeetTheTeam'
 import NewsAndArticles from '../Components/NewsAndArticles'
 import SignupForm from '../Components/SignupForm'
+import BottomLinks from '../Components/BottomLinks'
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
         <MeetTheTeam />
         <NewsAndArticles />
         <SignupForm />
+        <BottomLinks />
         </main>
         <Footer />
         </div>

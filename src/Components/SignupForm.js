@@ -20,7 +20,7 @@ const SignupForm = () => {
                 <form noValidate id="registerForm" method="get">
                     <label htmlFor="email"></label>
                 <input id="email" type="email" name="email" onKeyUp={handleEmailInput} placeholder="username@domain.com" className={isEmailValid ? "" : "error"} />
-                <span id="email-error"></span>
+                <span id="email-error" className="email-error-signup"></span>
                 <Button type="yellow" url="" title="Subscribe"/>
             </form>
                 <img src={DecorativeLine} alt="Decorative line"/>

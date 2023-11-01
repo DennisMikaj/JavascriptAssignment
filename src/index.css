@@ -1168,8 +1168,8 @@ header .menu .main-menu .btn-yellow {
 .articles-images .boxes .date-box {
   background-color: #f9d783;
   position: relative;
-  top: -210px;
-  left: 20px;
+  top: -270px;
+  left: 10px;
   width: 55px;
   height: 65px;
   display: flex;
@@ -1228,11 +1228,21 @@ header .menu .main-menu .btn-yellow {
 
 }
 
-#email-error {
-  color: rgb(196, 80, 80);
+.email-error-signup {
   position: absolute;
   top: 160px;
-  right: 450px;
+  right: 450px
+}
+
+#email-error, #text-error, #name-error {
+  text-align: center;
+  height: 25px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#text-error {
+  margin-bottom: 15px;
 }
 .signup input:focus {
   border: 1px solid #191919;
@@ -1284,8 +1294,10 @@ header .menu .main-menu .btn-yellow {
   }
 }
 .bottom-part .grid-container .content-2 {
-  margin-top: 115px;
+  margin-top: 15px;
   margin-left: 50px;
+  /* border: 1px solid red; */
+  text-align: start;
 }
 @media (max-width: 1200px) {
   .bottom-part .grid-container .content-2 {
@@ -1298,6 +1310,8 @@ header .menu .main-menu .btn-yellow {
   padding-bottom: 30px;
   font-family: "DM Sans", sans-serif;
   color: #ffffff;
+  margin-top: 115px;
+  margin-left: 50px;
 }
 .bottom-part .grid-container .content-2 a {
   display: grid;
@@ -1306,6 +1320,7 @@ header .menu .main-menu .btn-yellow {
   font-size: 16px;
   margin-bottom: 20px;
   color: #b6b6bc;
+
 }
 .bottom-part .grid-container .content-2 a:hover {
   color: #ffffff;
