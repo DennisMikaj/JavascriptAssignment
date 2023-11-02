@@ -99,7 +99,7 @@ const MessageUsSection = () => {
     <span id="name-error"></span>
     <input id="email" type="email" placeholder="Email*" onKeyUp={handleEmailInput}/>
     <span id="email-error"></span>
-    <textarea type="text" name="text" id="text" cols="30" rows="10" placeholder="Your Message*" onBlur={handleTextInput}></textarea>
+    <textarea type="text" name="text" id="text" cols="30" rows="10" placeholder="Your Message*" onKeyUp={handleTextInput}></textarea>
     <span id="text-error"></span>
     <Button type="yellow-submit" title="Send Message" />
     <span id="submit-form-info" className={formMessageClass}>{formMessage}</span>
