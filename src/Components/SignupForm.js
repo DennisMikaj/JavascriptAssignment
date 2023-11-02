@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import DecorativeLine from '../assets/images/Element.png'
 import Button from '../assets/Generics/Button'
-import SignupValidation from './SignupValidation'
+import SignupValidation from '../assets/Generics/SignupValidation'
 
 
 const SignupForm = () => {

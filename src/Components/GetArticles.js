@@ -5,7 +5,7 @@ import React, {useEffect, useState} from 'react'
 function formatPublishedDate(published) {
     const date = new Date(published);
     const day = date.getDate();
-    const month = date.toLocaleString('defaul', {month: 'short'});
+    const month = date.toLocaleString('default', {month: 'short'});
 
     return {day, month};
 }
@@ -15,9 +15,7 @@ const GetArticles = async () => {
         const result = await fetch("https://win23-assignment.azurewebsites.net/api/articles")
         const articles = await result.json()
         return articles;
-        // for (let article of articles) {
-        //     return articles
-        // }
+        
     } catch(error) {
         console.log(error)
         return [];

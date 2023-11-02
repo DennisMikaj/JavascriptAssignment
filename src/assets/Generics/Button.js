@@ -7,6 +7,8 @@ function Button({type, url, title}) {
         switch(type) {
             case 'yellow':
                 return 'btn-yellow'
+            case 'yellow-submit':
+                return 'btn-yellow'
             case 'dark':
                 return 'btn-dark'
             case 'small':
@@ -28,7 +30,9 @@ function Button({type, url, title}) {
 
     if (type === "small" || type === "small-2") {
         return <button className={getButtonClassName()} onClick={handleSmallButtonClick}></button>
-    } else 
+    } else if (type === "yellow-submit") {
+        return <button type="submit" className={getButtonClassName()} >{title} <i className="fa-solid fa-arrow-up-right-from-square"></i></button>
+    }
     return (
     <a className={getButtonClassName()} href={url}>
         {title}

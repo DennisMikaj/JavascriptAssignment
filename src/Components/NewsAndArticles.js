@@ -15,41 +15,9 @@ const NewsAndArticles = () => {
     <h2>Get Every Single Articles & News</h2>
     <Button type="transparent" url="/intro" title="Browse Articles" />
 </div>
-{/* <div className="articles-images"> */}
 <GetArticles />
 
-    {/* <div className="boxes">
-<img src={WomanAtWork} loading="lazy" alt="Woman at work"/>
-<div className="date-box">
-    <h5>25</h5>
-    <p>Mar</p>
-</div>
-<p id="business-text">Business</p>
-<h5>How To Use Digitalization In The Classroom</h5>
-<p id="business-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-</div>
-<div className="boxes">
-<img src={ChatGPTImage} loading="lazy" alt="image of chatGPT information"/>
-<div className="date-box">
-    <h5>17</h5>
-    <p>Mar</p>
-</div>
-<p id="business-text">Business</p>
-<h5>How To Implement Chat GPT In Your Projects</h5>
-<p id="business-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-</div>
-<div className="boxes">
-<img src={CSSBooks} loading="lazy" alt=""/>
-<div className="date-box">
-    <h5>13</h5>
-    <p>Mar</p>
-</div>
-<p id="business-text">Business</p>
-<h5>The Guide To Support Modern CSS Design</h5>
-<p id="business-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-
-</div> */}
-{/* </div> */}
+    
 
 <div className="buttons">
 <Button type="small-2" />

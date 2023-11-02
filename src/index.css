@@ -1228,6 +1228,26 @@ header .menu .main-menu .btn-yellow {
 
 }
 
+.submit-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(75, 165, 75);
+}
+
+.submit-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(197, 84, 84);
+}
+
 .email-error-signup {
   position: absolute;
   top: 160px;
