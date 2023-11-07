@@ -2,9 +2,8 @@ import React from 'react'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import NewsAndArticlesTop from '../Components/NewsAndArticlesTop'
-import Articles from '../Components/Articles'
-import NewsAndArticles from '../Components/NewsAndArticles'
-import ArticleList from '../Components/GetArticles'
+import NewsAndArticlesPage from '../Components/NewsAndArticlesPage'
+import SignupForm from '../Components/SignupForm'
 
 const News = () => {
   return (
@@ -12,7 +11,8 @@ const News = () => {
         <Header />
         <main>
           <NewsAndArticlesTop/>
-          <NewsAndArticles title={""} />
+          <NewsAndArticlesPage />
+          <SignupForm/>
         </main>
         <Footer />
     </div>

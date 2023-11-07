@@ -23,7 +23,7 @@ const GetArticles = async () => {
     }
 }
 
-function ArticleList() {
+function NewsAndArticlesPage() {
     const [articles, setArticles] = useState([]);
 
     useEffect(()  => {
@@ -36,35 +36,37 @@ function ArticleList() {
     }, []);
 
 
-    const newestArticle = articles.slice(0,3);
+    const newestArticle = articles.slice(0, 9);
 
     return (
-        <div className="articles-images">
-            
+        <>
+        <div className="container">
+        <h1>Our News & Articles</h1>
+        </div>
+        <div className="articles-images articles-images-1 container">
             {newestArticle.map((article) => {
                 const {day, month} = formatPublishedDate(article.published);
-
                 return(
-                <Link className="article-links" to={`/news/${article.id}`}>
-                <div key={article.id} className="boxes">
+            <Link className="article-links" to={`/news/${article.id}`}>        
+            <section key={article.id} className="articles">
+            <div className="boxes">
                 <img src={article.imageUrl} loading="lazy" alt="Woman at work"/>
-                <div className="date-box">
+            <div className="date-box">
                 <h5>{day}</h5>
                 <p>{month}</p>
             </div>
                 <p id="business-text">{article.category}</p>
                 <h5>{article.title}</h5>
                 <p id="business-text">{article.content}</p>
-
-
-
-            
             </div>
+            </section>
             </Link>
+            
             )})}
         </div>
+        </>
     )
 }
 
-export default ArticleList;
+export default NewsAndArticlesPage;
 

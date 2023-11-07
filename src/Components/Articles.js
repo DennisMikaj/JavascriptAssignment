@@ -1,13 +1,13 @@
 import React from 'react'
-import ArticleList from './GetArticles'
+import GetArticles from './GetArticles'
+import NewsAndArticles from './NewsAndArticles'
 
 
 const Articles = () => {
   return (
     <div className="container">
         <h2>Our News & Articles</h2>
-
-        <ArticleList />
+        <GetArticles />
     </div>
   )
 }
