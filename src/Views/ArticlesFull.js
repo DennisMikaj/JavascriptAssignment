@@ -3,6 +3,10 @@ import {useParams} from 'react-router-dom'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import Oval from '../assets/images/OvalCopy.svg'
+import NewsAndArticles from '../Components/NewsAndArticles'
+import BottomLinks from '../Components/BottomLinks'
+import SearchRecentPosts from '../Components/SearchRecentPosts'
+import RecentPosts from '../Components/RecentPosts'
 
 const ArticlesFull =  () => {
 
@@ -36,6 +40,7 @@ return (
     <div className="wrapper">
     <Header/>
     <main>
+        <div className="container news-flex">
     {article ? (
         <div key={article.id} className="container-xl">
         <h2>{article.title}</h2>
@@ -53,6 +58,15 @@ return (
     <p>No Article To show</p>
     )
     }
+    <div className="news-column">
+    <SearchRecentPosts/>
+    <RecentPosts/>
+    </div>
+    </div>
+    <div className="news-background">
+    <NewsAndArticles/>
+    </div>
+    <BottomLinks/>
     </main>
     <Footer/>
     </div>

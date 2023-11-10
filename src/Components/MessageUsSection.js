@@ -95,9 +95,9 @@ const MessageUsSection = () => {
 <div className="input-column">
     <form onSubmit={handleForm} noValidate>
         <label htmlFor="message"></label>
-    <input id="name" type="text" placeholder="Name*" onBlur={handleNameInput}/>
+    <input id="name" type="text" placeholder="Name*" onKeyUp={handleNameInput}/>
     <span id="name-error"></span>
-    <input id="email" type="email" placeholder="Email*" onKeyUp={handleEmailInput}/>
+    <input id="email" type="email" placeholder="Email*" onKeyUp={handleEmailInput} onBlur={handleEmailInput}/>
     <span id="email-error"></span>
     <textarea type="text" name="text" id="text" cols="30" rows="10" placeholder="Your Message*" onKeyUp={handleTextInput}></textarea>
     <span id="text-error"></span>

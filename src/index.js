@@ -10,6 +10,8 @@ import NotFound from './Views/NotFound';
 import Services from './Views/Services';
 import News from './Views/News'
 import ArticlesFull from './Views/ArticlesFull';
+import ArticleDetails from './Views/ArticleDetails';
+import { ArticleProvider } from './assets/Generics/ArticleContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,14 +20,16 @@ root.render(
 
 
     <BrowserRouter>
+    <ArticleProvider>
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/contacts' element={<Contacts/>} />
       <Route path='/news' element={<News/>} />
       <Route path='/services' element={<Services/>} />
-      <Route path='/news/:id' element={<ArticlesFull/>} />
+      <Route path='/news/:articleId' exact element={<ArticleDetails/>} />
       <Route path='*' element={<NotFound/>} />
     </Routes>
+    </ArticleProvider>
     </BrowserRouter>
   
   </React.StrictMode>

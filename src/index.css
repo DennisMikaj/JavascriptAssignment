@@ -1472,7 +1472,7 @@ footer .copyright a:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-bottom: 80px;
+  padding-bottom: 110px;
 }
 .message-us h2 {
   font-family: "DM sans", "sans-serif";
@@ -1538,6 +1538,7 @@ footer .copyright a:hover {
 .article-full-img {
   width: 50%;
   height: auto;
+  margin-top: 20px;
 }
 
 .article-info img {
@@ -1546,6 +1547,7 @@ footer .copyright a:hover {
 
 .article-links {
   text-decoration: none;
+  color: #191919;
 }
 
 .article-links:hover {
@@ -1556,4 +1558,126 @@ footer .copyright a:hover {
 
 .article-links img:hover {
   box-shadow: 0 0 10px 5px #191919;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.page-link {
+  color: #191919;
+  margin: 10px;
+  border-radius: 10px;
+} 
+
+.page-link:hover {
+  background-color: #191919;
+  color: #ffffff;
+}
+
+.page-link:focus {
+  background-color: #191919;
+  color: #ffffff;
+  outline: none;
+}
+
+
+.news-background {
+  background-color: #f0efe9;
+}
+
+.search-bar {
+  border-radius: 25px;
+  border: none;
+  background-color: #f0efe9;
+  padding: 12px 40px;
+  margin-top: 60px;
+  margin-bottom: 30px;  
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;  
+}
+
+.search-bar:focus{
+  outline: none;
+}
+
+.search-container i {
+  position: inherit;
+  left: 30px;
+  top: 15px;
+  color: #191919;
+}
+.news-flex {
+  display: flex;
+}
+
+.search-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+
+}
+
+.news-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent-posts-box {
+  border: 1px solid #DAD9D3;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.recent-posts-box h5 {
+  margin: 15px;
+}
+
+.article-list {
+  list-style: none;
+  
+  margin-top: 20px;
+}
+
+.article-list-last {
+  list-style:none;
+}
+
+.box-title {
+  position: relative;
+  display: inline-block;
+}
+
+.box-title::before {
+  content: attr(data-text);
+  display: inline-block;
+  border-bottom: 2px solid #191919;
+}
+
+.date-text {
+  color: #6A6C71;
+  padding-left: 0px;
+  font-size: 15px;
+}
+
+.border {
+  transform: translate(calc(50% - 150px));
+}
+
+.inline-text {
+  display: flex;
+  gap: 5px;
+}
+
+.article-text {
+  margin-top: 20px;
 }

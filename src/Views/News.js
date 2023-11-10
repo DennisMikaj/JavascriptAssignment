@@ -4,6 +4,8 @@ import Footer from '../Components/Footer'
 import NewsAndArticlesTop from '../Components/NewsAndArticlesTop'
 import NewsAndArticlesPage from '../Components/NewsAndArticlesPage'
 import SignupForm from '../Components/SignupForm'
+import Pagination from '../Components/Pagination'
+import BottomLinks from '../Components/BottomLinks'
 
 const News = () => {
   return (
@@ -12,7 +14,9 @@ const News = () => {
         <main>
           <NewsAndArticlesTop/>
           <NewsAndArticlesPage />
+          <Pagination />
           <SignupForm/>
+          <BottomLinks/>
         </main>
         <Footer />
     </div>
