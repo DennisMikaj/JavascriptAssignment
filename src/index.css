@@ -1681,3 +1681,30 @@ footer .copyright a:hover {
 .article-text {
   margin-top: 20px;
 }
+
+
+#goto-top {
+  background-color: #191919;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  opacity: 1;
+  transition: 0.1s ease-in-out;
+  z-index: 1;
+}
+
+#goto-top:hover {
+  background-color: black;
+}
+
+.hidden {
+  opacity: 0 !important;
+  transition: 0.25s ease-in-out;
+}

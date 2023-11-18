@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
+import { useArticles } from '../assets/Generics/ArticleContext';
 
 
 
@@ -7,34 +8,13 @@ function formatPublishedDate(published) {
     const date = new Date(published);
     const day = date.getDate();
     const month = date.toLocaleString('default', {month: 'short'});
-
     return {day, month};
 }
 
-const GetArticles = async () => {
-    try {
-        const result = await fetch("https://win23-assignment.azurewebsites.net/api/articles")
-        const articles = await result.json()
-        return articles;
-        
-    } catch(error) {
-        console.log(error)
-        return [];
-    }
-}
+
 
 function NewsAndArticlesPage() {
-    const [articles, setArticles] = useState([]);
-
-    useEffect(()  => {
-        async function fetchArticles() {
-            const fetchedArticles = await GetArticles();
-            setArticles(fetchedArticles);
-        }
-
-        fetchArticles();
-    }, []);
-
+    const { articles } = useArticles()
 
     const newestArticle = articles.slice(0, 9);
 

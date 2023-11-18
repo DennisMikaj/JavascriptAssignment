@@ -12,7 +12,7 @@ import News from './Views/News'
 import ArticlesFull from './Views/ArticlesFull';
 import ArticleDetails from './Views/ArticleDetails';
 import { ArticleProvider } from './assets/Generics/ArticleContext';
-
+import GoToTopButton from './assets/Generics/GoToTopButton'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +20,7 @@ root.render(
 
 
     <BrowserRouter>
+    <GoToTopButton/>
     <ArticleProvider>
     <Routes>
       <Route path='/' element={<Home/>} />

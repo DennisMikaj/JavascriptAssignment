@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useArticles } from '../assets/Generics/ArticleContext'
 import Header from '../Components/Header'
 import SearchRecentPosts from '../Components/SearchRecentPosts'
@@ -17,14 +17,17 @@ const ArticleDetails = () => {
     const id = parseInt(articleId, 10);
 
     const article = articles.find((article) => article.id === articleId);
-    console.log("articleId:", articleId)
-    console.log("id:", id)
+    
 
     const formatArticleDate = (dateString) => {
       const options = {year: 'numeric', month: 'short', day: 'numeric'}
       return new Date(dateString).toLocaleDateString(undefined, options)
   }
 
+
+    useEffect(() => {
+      window.scrollTo(0, 0) 
+  }, [articleId])
 
   return (
 
@@ -65,16 +68,6 @@ const ArticleDetails = () => {
     </main>
     <Footer/>
     </div>
-    // <div>ArticleDetails
-    // {
-    //     articles.map(article => (
-    //         <div key={article.id}>
-    //             <h1>{article.title}</h1>
-    //             <p>{article.author}</p>
-    //             </div>
-    //     ))
-    // }
-    // </div>
   )
 }
 
